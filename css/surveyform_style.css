@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:300,400');
+
+
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: 'Overpass Mono', monospace;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*set container*/
+#wrap, form, .items{
+  display: flex;
+  flex-direction: column;
+}
+
+#wrap {
+  align-items: center;
+  min-width: 20rem;
+  margin: 1.875rem auto;
+  margin-bottom: 0;
+}
+
+
+/*header part*/
+header {
+  width: 90%;
+}
+
+#title, #description {
+  text-align: center;
+}
+
+
+/*main part*/
+main {
+  width: 90%;
+  padding: 0.625rem;
+}
+
+fieldset {
+  margin-bottom: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0;
+}
+
+
+/*every question item*/
+.labels, .inputs {
+  width: 100%;
+}
+
+.labels {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.inputs {
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+
+
+/*text, select, textarea*/
+.length, #fcccomment {
+  width: 95%;
+  padding-left: 0.3125rem;
+  font-family : inherit;
+  font-weight: 300;
+}
+
+.length {
+  height: 1.875rem;
+  line-height: 1.875rem;
+  align-self: center;
+}
+
+#fcccomment {
+  height: 6.25rem;
+  padding-top: 0.3125rem;
+}
+
+
+
+
+/*ul, li*/
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  font-size: 0.96875rem;
+  letter-spacing: -0.0625rem;
+}
+
+li {
+  margin-bottom: 0.3125rem;
+}
+
+.fccimprove, .fcclike {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin-right: 0.625rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.fcclike {
+  border-radius: 50%;
+}
+
+
+/*text, select, textarea, ul, li, submit common part*/
+li label, .fccimprove, .fcclike, #submit {
+  cursor: pointer;
+}
+
+.length:focus, #fcccomment:focus, .fccimprove:focus, .fcclike:focus {
+  outline: none;
+}
+
+
+/*submit*/
+#submit {
+  align-self: center;
+  width: 6.25rem;
+  height: 1.875rem;
+  margin-bottom: 0.625rem;
+  font-family : inherit;
+}
+
+#submit:hover {
+  color: #ffffff;
+}
+
+
+/*required mark*/
+#required {
+  margin: 0 0.1875rem 0.625rem 0; 
+  text-align: right;
+  color: red;
+  font-size: 0.75rem;
+}
+
+#name-label::after, #email-label::after, #number-label::after, #fcclike-label::after {
+  content: "*";
+  color: red;
+}
+
+
+/*common color and border*/
+header, .length, #fcccomment, li:hover {
+  color: #006400;
+}
+
+html, body, .length:focus, #fcccomment:focus {
+  background: #e6ffe6;
+}
+
+main, #submit {
+  background: #ffffff;
+}
+
+.fccimprove:checked, .fcclike:checked, #submit:hover {
+   background: #006400;
+}
+
+main, fieldset, .length, #fcccomment, .fccimprove, .fcclike, .fccimprove:hover, .fcclike:hover, #submit {
+  border-style: solid;
+}
+
+main, fieldset {
+  border-width: 0.1875rem
+}
+
+.length, #fcccomment, .fccimprove, .fcclike, .fccimprove:hover, .fcclike:hover, #submit {
+  border-width: 0.0625rem
+}
+
+main, .fccimprove:hover, .fcclike:hover {
+  border-color: #006400;
+}
+
+fieldset, #submit {
+  border-color: #004d00;
+}
+
+.length, #fcccomment, .fccimprove, .fcclike{
+  border-color: #cccccc;
+}
+
+main, .length, #fcccomment, .fccimprove {
+  border-radius: 0.3125rem;
+}
+
+
+/*other part*/
+#copyright {
+  margin-top: 1.875rem;
+  font-size: 0.75rem;
+  color: #004d00;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@media (min-width: 26.25rem) {
+  main {
+  width: 80%;
+  }
+  
+  .length, #fcccomment {
+  padding-left: 0.625rem;
+  }
+  
+  ul {
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+  
+}

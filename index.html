@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Survey Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/surveyform_style.css">
+</head>
+<body>
+
+  <div id="wrap">
+  
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+    </header>
+    
+    <main> 
+      <p id="required"> * Required </p>
+      
+      <form action="#" method="GET" id="survey-form">
+        
+        <fieldset id="info_area">
+          <div class="items">
+            <div class="labels">
+              <label id="name-label" for="name">Name</label>
+            </div>
+            <div class="inputs">
+            <input id="name" class="length" type="text" name="name" placeholder="Donald Dunn" required>
+            </div>
+          </div> <!--end .items:name-->
+          <div class="items">
+            <div class="labels">
+              <label id="email-label" for="email">Email</label>
+            </div>
+            <div class="inputs">
+              <input id="email" class="length" type="email" name="email"  placeholder="jared@piedpiper.com" required>
+            </div>
+          </div> <!--end .items2:email-->
+          <div class="items">
+            <div class="labels">
+              <label id="number-label" for="number">Age</label>
+            </div>
+            <div class="inputs">
+              <input id="number" class="length"  type="number" name="age" min="5" max="125" placeholder="30" required>
+            </div>
+          </div> <!--end .items3:age-->
+          <div class="items">
+            <div class="labels">
+              <label id="role-label" for="dropdown"> 
+                Which option best describes your current role? 
+              </label>
+            </div>
+            <div class="inputs">
+              <select id="dropdown" class="length" name="role">
+                <option disabled selected>Select</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="nottosay">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div> <!--end .items4:role-->
+        </fieldset> <!--end #info_area-->
+        
+        <fieldset id="choice_area">
+          <div class="items">
+            <div class="labels">
+              <label id="fccpart-label" for="dropdown2"> 
+                What do you like most in FCC? 
+              </label>
+            </div>
+            <div class="inputs">
+              <select id="dropdown2" class="length" name="fccpart">
+                <option disabled selected>Select</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="opensource">Open Source</option>
+              </select>
+            </div>
+          </div> <!--end .items5:fccpart-->
+          <div class="items">
+            <div class="labels">
+              <label id="fccimprove-label" for="fccimprove-list">Things that should be improved in the future?</label>
+            </div>
+            <div class="inputs">
+              <ul id="fccimprove-list">
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="1">Responsive Web Design</label></li>
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="2">Javascript Algorithms</label></li>
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="3">Data Structures</label></li>
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="4">Front End Libraries</label></li>
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="5">Data Visualization</label></li>
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="6">Apis And Microservices</label></li>
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="7">Information Security</label></li>
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="8">Quality Assurance</label></li>
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="9">Coding Interview Prep</label></li>
+              <li class="check"><label><input class="fccimprove" type="checkbox" name="improved" value="10">Forum</label></li>
+             </ul>
+            </div>
+          </div> <!--end .items6:fccimprove-->
+         </fieldset> <!--end #choice_area-->
+        
+         <fieldset id="comment_area"> 
+          <div class="items">
+            <div class="labels">
+              <label id="fcclike-label" for="fcclike-list"> 
+                 How likely is that you would recommend freeCodeCamp to a friend?</label>
+            </div>
+            <div class="inputs">
+              <ul id="fcclike-list">
+                <li class="radio"><label><input class="fcclike" type="radio" name="rate" value="3" required>Definitely</label></li>
+                <li class="radio"><label><input class="fcclike" type="radio" name="rate" value="2">Maybe</label></li>
+                <li class="radio"><label><input class="fcclike" type="radio" name="rate" value="1">Not sure</label></li>
+              </ul>
+            </div>
+          </div> <!--end .items7:fcclike-->
+          <div class="items">
+            <div class="labels">
+              <label id="fcccomment-label" for="fcccomment"> 
+                Any Comments or Suggestions? 
+              </label>
+            </div>
+            <div class="inputs">
+              <textarea id="fcccomment" name="fcccomment"  placeholder="Leave Comments ..."></textarea>
+            </div>
+          </div> <!--end .items8:fcccomment-->
+        </fieldset>  <!--end #comment_area-->
+        
+        <button id="submit" type="submit">Submit</button>
+        
+      </form> 
+    </main>
+
+    <p id="copyright" class="text-center">Designed and coded by <a href="https://codepen.io/pocoapocochen" title="My Dashboard" target="_blank"> Yu-jie </a> with <i class="fa fa-music" aria-hidden="true"></i> & <i class="fa fa-heart" aria-hidden="true"></i></p>
+  
+</div>
+
+</body>
+</html>
