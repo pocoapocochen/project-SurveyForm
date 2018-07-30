@@ -1,5 +1,5 @@
 # project-SurveyForm
-* Project topic from: freeCodeCamp - Responsive Web Design Course [Link](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form/)
+* Project topic from: freeCodeCamp - Responsive Web Design Course [(Link)](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form/)
 * [Live](https://pocoapocochen.github.io/project-SurveyForm/) version
 
 ## User Story
