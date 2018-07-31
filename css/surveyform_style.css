@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono:300,400');
 
 
@@ -159,6 +160,10 @@ header, .length, #fcccomment, li:hover {
   color: #006400;
 }
 
+#copyright, #copyright a {
+  color: #004d00;
+}
+
 html, body, .length:focus, #fcccomment:focus {
   background: #e6ffe6;
 }
@@ -204,10 +209,9 @@ main, .length, #fcccomment, .fccimprove {
 #copyright {
   margin-top: 1.875rem;
   font-size: 0.75rem;
-  color: #004d00;
 }
 
-a {
+#copyright a {
   text-decoration: none;
 }
 
